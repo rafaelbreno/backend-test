@@ -71,6 +71,7 @@
     - Request:
     -   ```json
             {
+                "name": "John Doe",
                 "email": "john.doe@mock.com",
                 "password_confirmation": "*******",
                 "password": "*******",
