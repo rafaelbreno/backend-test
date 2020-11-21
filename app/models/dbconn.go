@@ -1,7 +1,7 @@
 package models
 
 import (
-	"go-proj/database"
+	"coderockr-test/database"
 	"gorm.io/gorm"
 )
 
@@ -10,7 +10,7 @@ var DB *gorm.DB
 func ConnectDatabase() {
 	mig := database.Conn()
 
-	mig.AutoMigrate(&List{})
+	mig.AutoMigrate(&User{})
 
 	DB = mig
 }
